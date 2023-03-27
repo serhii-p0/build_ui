@@ -9,7 +9,7 @@ on:
       - master
       - LTS-3-6
   pull_request_review:
-    types: [submitted]
+  #   types: [submitted]
   # pull_request:
   #   branches: [main, master, LTS-3-6]
   #   types: [unlocked]
