@@ -10,7 +10,7 @@ on:
       - LTS-3-6
   pull_request:
     branches: [main, master, LTS-3-6]
-    types: [locked]
+    types: [unlocked]
 
 jobs:
   build:
