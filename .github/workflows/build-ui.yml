@@ -23,5 +23,5 @@ jobs:
           ref: ${{ github.ref }}
 
 
-      - name: Build finish!
+      - name: Build finish
         run : echo "Build Finished Successfully!"
