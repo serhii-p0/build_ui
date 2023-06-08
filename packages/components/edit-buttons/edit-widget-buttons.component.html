@@ -1,0 +1,32 @@
+<div class="d-flex" [style.visibility]="isHidden ? 'hidden' : 'visible'">
+
+  <button (click)="onEdit()"
+          *ngIf="!isEdit"
+          [disabled]="disabled"
+          class="btn"
+          [attr.data-qa]="'edit-button'"
+          mat-icon-button
+          type="button">
+    <mat-icon>edit</mat-icon>
+  </button>
+
+  <button (click)="onSave()"
+          *ngIf="isEdit"
+          [disabled]="disabled || disableSubmit"
+          color="primary"
+          [attr.data-qa]="'save-button'"
+          mat-icon-button
+          type="button">
+    <mat-icon>check</mat-icon>
+  </button>
+
+  <button (click)="onCancel()"
+          [disabled]="disabled"
+          *ngIf="isEdit"
+          [attr.data-qa]="'cancel-button'"
+          mat-icon-button
+          type="button">
+    <mat-icon>close</mat-icon>
+  </button>
+
+</div>
